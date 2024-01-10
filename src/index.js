@@ -44,11 +44,11 @@ function displayBreed(breedList){
     dogStyles.forEach(dog => {
         dog.addEventListener('click', () =>{
             dog.style.color = 'red';
-        })
-    })
+        });
+    });
 
     const breedFilter = document.getElementById('breed-dropdown');
-    breedFilter.addEventListener('change', () => {
+    breedFilter.addEventListener('click', () => {
     const selectedLetter = breedFilter.value;
     filterAndDisplayDogs(selectedLetter);
     });
